@@ -3,7 +3,7 @@
 
 .navbar-text-color{
     color: white;
-    transition: transform(0.35s);
+    transition: transform 0.2s;
 }
 .navbar-text-color:hover{
     transform: translateY(-3px);
@@ -41,10 +41,10 @@
     
 }
 .social-media-icons{
-    transition: transform(0.1s);
+    transition: transform 0.6s;
 }
 .social-media-icons:hover{
-    transform:translateY(-7px);
+    transform:translateY(-9px);
 }
 #self-intro{
     z-index: 3;
@@ -99,27 +99,28 @@
     background-color:red;
     z-index: 3;
 }
-#project1-intro{
-    color:rgb(219, 219, 219);
-    margin-top: 100px;
-    text-align: left;
-    font-size: large;
-    font-family: Kalam;
-    font-size: 23px;
-    height: 500px;
-    padding-top: 100px;
-    padding-left: 400px;
-    z-index: 1;
-}
-#project2-intro{
+.project-intro{
     color: rgb(219, 219, 219);
     margin-top: 100px;
-    text-align: right;
+    text-align: end;
     font-size: large;
     font-family: Kalam;
     font-size: 23px;
     height: 500px;
     padding-top: 0px;
+    padding-right: 500px;
+    margin-top: 0px;
+    z-index: 2;
+}
+#project-intro1{
+    color: rgb(219, 219, 219);
+    margin-top: 200px;
+    text-align: end;
+    font-size: large;
+    font-family: Kalam;
+    font-size: 23px;
+    height: 500px;
+    padding-top: 100px;
     padding-right: 500px;
     margin-top: 0px;
     z-index: 2;
@@ -177,18 +178,92 @@
     height: 200px;
     margin-left: 40px;
 }
+
+/*contact section*/
+
 .contact-form{
     padding-top: 100px;
     align-items: flex-end;
     width: 900px;
     padding-left: 600px;
 }
-#name-field{
-    margin-bottom: 50px;
+
+.contact-left{
+    flex-basis: 35%;
 }
-#mail-field{
-    margin-bottom: 50px;
+.contact-right{
+    flex-basis: 60%;
 }
-#messege-field{
-    margin-bottom: 100px;
+
+.contact-left h1{
+    margin-top: 70px;
+    color: #ababab;
+}
+.contact-left p{
+    margin-top: 20px;
+    color: #5c5b5b;
+    font-weight: 500;
+}
+.contact-left p i{
+    margin-right: 20px;
+}
+.social-icons a i{
+    margin-top: 20px;
+    font-size: 35px;
+    margin-right: 30px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a i:hover{
+    color: aqua;
+    transform: translateY(-5px);
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #5c5b5b;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+.contact-right form button{
+    margin-top: 20px;
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.form-control:focus {
+    border-color:aqua;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+    background: #ababab;
+} 
+.form-control{
+    background: #5c5b5b;
+    border-radius: 8px;
+    font-weight: 600;
+}
+#first-input-field{
+    margin-top: 75px;
+}
+
+.btn-outline-primary{
+    border-color: aqua;
+    color: aqua;
+    font-weight: 500;
+}
+.btn-outline-primary:active{
+    color: #03090E;
+    background-color: aqua;
+    border-color: aqua;
+}
+.btn-outline-primary:hover{
+    color: #03090E;
+    background-color: aqua;
+    border-color: aqua;
 }
